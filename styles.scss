@@ -1,0 +1,92 @@
+body {
+  display: inline-block;
+   width: 100%;
+   margin: 0%;
+   background-image:url('http://www.zastavki.com/pictures/originals/2015/Nature___Forest_Trees_without_leaves_on_a_background_of_stars_098901_.jpg');
+   background-repeat: no-repeat;
+   background-size: 137%;
+}
+li {
+  list-style: none;
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1%;
+    border: 2px solid lightgray;
+    background-color: gray;
+  img {
+    display: inline-block;
+    width: 100%;
+    height: 369px;
+  }
+}
+
+.main-container {
+display:inline-block;
+width:100%;
+}
+header {
+  display: inline-block;
+    width: 100%;
+    height: 12em;
+    background-image: url('https://webconceptblog.files.wordpress.com/2015/07/which-one-is-best-programming-language.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    p {
+      font-size: 316%;
+    font-family: arial black;
+    margin-left: 42%;
+    color: darkgrey;
+}
+}
+.Albums {
+  width: 85%;
+  display: inline-block;
+  padding-left: 9%;
+  margin-bottom: 5%;
+  margin-top: 3%;
+li p {
+  color: lightgray;
+  font-size: 140%;
+  padding-left: 33%;
+  background-color: gray;
+  margin: 0;
+  }
+}
+  img {
+    display: inline-block;
+    width: 33%;
+    height: 50%;
+}
+.Content {
+  display: inline-block;
+    width: 80%;
+}
+.Navbar {
+  display: inline-block;
+  height:54em;
+  ul{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+  li {
+    display: inline-block;
+    width: 100%;
+    height: 15%;
+    position: relative;
+   bottom: 38%;
+   p {
+    display: inline-block;
+    width: 100%;
+    height: 73%;
+
+}
+}
+}
+}
+.Navbar {
+  display:hidden;
+}

@@ -11,12 +11,12 @@ Albums[1].Photos.forEach(function(element){
    Ethan += `<img src='${element}' class=Ethan />`
 });
 var John = "";
-Albums[2].Photos.forEach(function(element){
-   John += `<img src='${element}' class=Reviewbrah />`
+Albums[3].Photos.forEach(function(element){
+   John += `<img src='${element}' class=Joey />`
 });
 var Joey = "";
-Albums[3].Photos.forEach(function(element){
-   Joey += `<img src='${element}' class=Joey />`
+Albums[2].Photos.forEach(function(element){
+   Joey += `<img src='${element}' class=Reviewbrah />`
 });
 var Pupinia ="";
 Albums[4].Photos.forEach(function(element){
@@ -34,7 +34,7 @@ $(document).ready(function () {
 
 $('.Samh').toggleClass("inactive").toggle();
 $('.Costanza').toggleClass("inactive").toggle();
-$('.Navbar').toggleClass("inactive").toggle();
+$('.Navbar').toggleClass("off").toggle();
 $('.Ethan').toggleClass("inactive").toggle();
 $('.Reviewbrah').toggleClass("inactive").toggle();
 $('.Joey').toggleClass("inactive").toggle();
@@ -43,51 +43,81 @@ $('.Pupinia').toggleClass("inactive").toggle();
 
 //Switch to the Costanza album
 $('#Album1').click(function() {
-  $('.Costanza').toggleClass("inactive").toggle()
-  $('.Album').toggleClass("inactive").toggle()
-  $('.Navbar').toggleClass("inactive").toggle()
+  $('.Costanza').toggleClass("active").removeClass("inactive").toggle()
+  $('.Album').toggleClass("active").removeClass("inactive").toggle()
+  $('.Navbar').toggleClass("on").removeClass("off").toggle()
 });
 //Switch to the Sam Hyde Album
 $('#Album2').click(function() {
-  $('.Samh').toggleClass("inactive").toggle()
-  $('.Album').toggleClass("inactive").toggle()
-  $('.Navbar').toggleClass("inactive").toggle()
+  $('.Samh').toggleClass("active").removeClass("inactive").toggle()
+  $('.Album').toggleClass("active").removeClass("inactive").toggle()
+  $('.Navbar').toggleClass("on").removeClass("off").toggle()
 });
 //Switch to the H3h3 Album
 $('#Album3').click(function() {
-  $('.Ethan').toggleClass("inactive").toggle()
-  $('.Album').toggleClass("inactive").toggle()
-  $('.Navbar').toggleClass("inactive").toggle()
+  $('.Ethan').toggleClass("active").removeClass("inactive").toggle()
+  $('.Album').toggleClass("active").removeClass("inactive").toggle()
+  $('.Navbar').toggleClass("on").removeClass("off").toggle()
 });
 //Switch to the Reviewbrah Album
 $('#Album4').click(function() {
-  $('.Reviewbrah').toggleClass("inactive").toggle()
-  $('.Album').toggleClass("inactive").toggle()
-  $('.Navbar').toggleClass("inactive").toggle()
+  $('.Reviewbrah').toggleClass("active").removeClass("inactive").toggle()
+  $('.Album').toggleClass("active").removeClass("inactive").toggle()
+  $('.Navbar').toggleClass("on").removeClass("off").toggle()
 });
 //Switch to the JoeysWorldTour album
 $('#Album5').click(function() {
-  $('.Joey').toggleClass("inactive").toggle()
-  $('.Album').toggleClass("inactive").toggle()
-  $('.Navbar').toggleClass("inactive").toggle()
+  $('.Joey').toggleClass("active").removeClass("inactive").toggle()
+  $('.Album').toggleClass("active").removeClass("inactive").toggle()
+  $('.Navbar').toggleClass("on").removeClass("off").toggle()
 });
 //Switch to the OurThirdLife album
 $('#Album6').click(function() {
-  $('.Pupinia').toggleClass("inactive").toggle()
-  $('.Album').toggleClass("inactive").toggle()
-  $('.Navbar').toggleClass("inactive").toggle()
+  $('.Pupinia').toggleClass("active").removeClass("inactive").toggle()
+  $('.Album').toggleClass("active").removeClass("inactive").toggle()
+  $('.Navbar').toggleClass("on").removeClass("off").toggle()
 });
+
 //Switch to the Costanza album via Navbar
 $('.Cos').click(function(){
-  if($('img').attr('class') === 'Costanza'){
-    $('.Costanza').attr('style')=== 'display:inline-block';
+  if ($('.Costanza').attr('class')==='Costanza inactive'){
+    $('img.active').toggleClass('inactive').removeClass('active').toggle()
+    $('.Costanza').removeClass('inactive').toggleClass('active').toggle()
   }
-
-});
-//Switch to the Sam Hyde Album via Navbar
+  })
+//Switch to Sam Hyde album via Navbar
 $('.Sam').click(function(){
-  if($('.Samh').attr('class') === 'Samh inactive'){
-    $('.Samh').toggleClass("inactive").toggle();
-    $('.Costanza').toggleClass("inactive").toggle();
-  }})
+  if ($('.Samh').attr('class')==='Samh inactive'){
+    $('img.active').toggleClass('inactive').removeClass('active').toggle()
+    $('.Samh').removeClass('inactive').toggleClass('active').toggle()
+  }
+  })
+//Switch to the H3h3 Album via Navbar
+$('.h3').click(function(){
+  if ($('.Ethan').attr('class')==='Ethan inactive'){
+    $('img.active').toggleClass('inactive').removeClass('active').toggle()
+    $('.Ethan').removeClass('inactive').toggleClass('active').toggle()
+}
 })
+//Switch to the JoeysWorldTour via Navbar
+$('.joey').click(function(){
+  if ($('.Joey').attr('class')==='Joey inactive'){
+    $('img.active').toggleClass('inactive').removeClass('active').toggle()
+    $('.Joey').removeClass('inactive').toggleClass('active').toggle()
+  }
+})
+//Switch to the Pupinia album
+$('.pup').click(function(){
+  if ($('.Pupinia').attr('class')==='Pupinia inactive'){
+    $('img.active').toggleClass('inactive').removeClass('active').toggle()
+    $('.Pupinia').removeClass('inactive').toggleClass('active').toggle()
+  }
+})
+//Switch to the REviewbrah album via navbar
+$('.brah').click(function(){
+  if ($('.Reviewbrah').attr('class')==='Reviewbrah inactive'){
+    $('img.active').toggleClass('inactive').removeClass('active').toggle()
+    $('.Reviewbrah').removeClass('inactive').toggleClass('active').toggle()
+  }
+})
+  })

@@ -42,7 +42,7 @@ header {
 }
 }
 .Albums {
-  width: 85%;
+  width: 65%;
   display: inline-block;
   padding-left: 9%;
   margin-bottom: 5%;
@@ -66,7 +66,8 @@ li p {
 }
 .Navbar {
   display: inline-block;
-  height:54em;
+  width: 20%;
+  height: 43em;
   ul{
     display: inline-block;
     width: 100%;
@@ -77,11 +78,13 @@ li p {
     width: 100%;
     height: 15%;
     position: relative;
-   bottom: 38%;
+
    p {
     display: inline-block;
     width: 100%;
     height: 73%;
+    font-size: 270%;
+    text-align: center;
 
 }
 }
@@ -89,4 +92,7 @@ li p {
 }
 .Navbar {
   display:hidden;
+}
+.active{
+    width:26%;
 }

@@ -28,7 +28,7 @@ var Albums = [
     title:"Reviewbrah",
     author:"John",
     Photos:[
-      './Photos/Reviewbrah/Reviewbrah.jpg',
+      './Photos/Reviewbrah/Reviewbrah1.jpg',
       './Photos/Reviewbrah/Reviewbrah1.jpg',
       './Photos/Reviewbrah/Reviewbrah2.jpg',
       './Photos/Reviewbrah/Reviewbrah3.jpeg',

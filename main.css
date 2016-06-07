@@ -39,11 +39,10 @@ header {
     color: darkgrey; }
 
 .Albums {
-  width: 65%;
+  width: 71%;
   display: inline-block;
-  padding-left: 9%;
-  margin-bottom: 5%;
-  margin-top: 3%; }
+  padding-left: 8%;
+  float: right; }
   .Albums li p {
     color: lightgray;
     font-size: 140%;
@@ -63,7 +62,9 @@ img {
 .Navbar {
   display: inline-block;
   width: 20%;
-  height: 43em; }
+  height: 43em;
+  position: relative;
+  top: 19%; }
   .Navbar ul {
     display: inline-block;
     width: 100%;
@@ -85,3 +86,7 @@ img {
 
 .active {
   width: 26%; }
+
+.Return {
+  position: relative;
+  bottom: -19%; }

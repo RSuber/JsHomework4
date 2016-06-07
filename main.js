@@ -1,3 +1,5 @@
+//Independent variables for each album of photos
+
 var Costanza = "";
 Albums[5].Photos.forEach(function(element){
    Costanza += `<img src='${element}' class=Costanza />`
@@ -119,5 +121,8 @@ $('.brah').click(function(){
     $('img.active').toggleClass('inactive').removeClass('active').toggle()
     $('.Reviewbrah').removeClass('inactive').toggleClass('active').toggle()
   }
+})
+$('.Return').click(function(){
+  location.reload()
 })
   })

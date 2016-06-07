@@ -72,5 +72,38 @@ var Albums = [
       './Photos/Costanza/costanza6.jpg'
     ]
   },
-]
+];
 //How to display independent images on the page
+var Navbar = [
+  {
+    Album: "Costanza",
+    clas: "Cos",
+    title:"Album 1",
+
+  },
+  {
+    Album: "Costanza",
+    clas: "Sam",
+    title:"Album 2",
+  },
+  {
+    Album: "Costanza",
+    clas: "h3",
+    title:"Album 3",
+  },
+  {
+    Album: "Costanza",
+    clas: "joey",
+    title:"Album 4",
+  },
+  {
+    Album: "Costanza",
+    clas: "pup",
+    title:"Album 5",
+  },
+  {
+    Album: "Costanza",
+    clas: "brah",
+    title:"Album 6",
+  },
+]
